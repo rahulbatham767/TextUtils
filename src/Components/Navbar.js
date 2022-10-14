@@ -10,7 +10,7 @@ export const Navbar = (prop) => {
   <nav className={`navbar navbar-expand-lg navbar-${prop.mode} bg-${prop.mode}`}>
   <div className="container-fluid">
     <a className="navbar-brand" href="/">{prop.title}</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,12 +25,12 @@ export const Navbar = (prop) => {
        
       
       </ul>
-    
-    </div>
-    <div className="form-check form-switch">
+      <div className="form-check form-switch">
   <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onClick={prop.tooglemode}/>
   <label className={`form-check-label  text-${prop.mode==='dark'?'light':'dark'}`} htmlFor="flexSwitchCheckChecked">Enabled {prop.mode} Mode</label>
 </div>
+    </div>
+   
   </div>
   
 </nav>

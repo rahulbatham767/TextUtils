@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export const About = (props) => {
-    const [btntext, setBtntext] = useState("Enable Dark Mode");
- const [mystyle,setMystyle] = useState({
+//     const [btntext, setBtntext] = useState("Enable Dark Mode");
+//  const [mystyle,setMystyle] = useState({
   
-    color:"white",
-    backgroundColor:"black"
-})
+//     color:"white",
+//     backgroundColor:"black"
+// })
 
 let myStyle={
 color:props.mode==='dark' ? "white" : "purple",
