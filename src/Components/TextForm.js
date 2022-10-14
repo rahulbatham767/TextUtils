@@ -5,14 +5,22 @@ export const TextForm = (props) => {
     const handleupClick=()=>{
             let newText=Text.toUpperCase();
       settext(newText);
+      if(Text.length===0){
+      alert('Please enter a text first');
+      }
+      else{
       props.show("Coverted to Uppercase","success");
-      
+      }
     }
     const handledownClick=()=>{
       let newText=Text.toLowerCase();
       settext(newText);
+      if(Text.length===0){
+        alert('Please enter a text first');
+        }
+        else{
       props.show("Coverted to LowerCase","success");
-   
+        }
     }
 
 
@@ -52,15 +60,15 @@ navigator.clipboard.writeText(Text);
    ></textarea>
 </div>
 <button className="btn btn-primary" onClick={handleupClick}>Convert To Uppercase</button>
-<button className="btn btn-primary mx-1 "onClick={handledownClick}>Convert To Lowercase</button>
-<button className="btn btn-primary mx-1 "onClick={Speak}>Speak</button>
-<button className="btn btn-primary mx-1 "onClick={Copy}>Copy Text</button>
-<button className="btn btn-primary mx-1 "onClick={Clear}>Clear</button>
+<button className="btn btn-primary mx-1 my-1"onClick={handledownClick}>Convert To Lowercase</button>
+<button className="btn btn-primary mx-1 my-1"onClick={Speak}>Speak</button>
+<button className="btn btn-primary mx-1 my-1"onClick={Copy}>Copy Text</button>
+<button className="btn btn-primary mx-1 my-1"onClick={Clear}>Clear</button>
 </div>
 
 <div className="container">
     <h3>Your text Summary</h3>
-    <p>{Text.split(" ").length-1} words and {Text.length} characters</p>
+    <p>{Text.split(" ").filter((element)=>{return element.length!==0}).length} words and {Text.length} characters</p>
     <p>{0.008 * Text.split(" ").length} Minutes read </p>
 
     <h4>Preview</h4>

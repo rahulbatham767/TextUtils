@@ -8,7 +8,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
 
 
@@ -56,7 +56,7 @@ const showAlert=(message,type)=>{
  <Router>
  <Navbar title="TextUtils" abouttext="About" mode={darkMode} tooglemode={toogleMode}   />
  <Alert alert={alert}/>
-  <switch>
+  <Switch>
   <Route exact path="/about">
   <About mode={darkMode}/>
           </Route>
@@ -65,7 +65,7 @@ const showAlert=(message,type)=>{
  <TextForm heading="Enter Text to Analyze" mode={darkMode} show={showAlert}/>
 
           </Route>
-  </switch>
+  </Switch>
  </Router>
 
  </>
