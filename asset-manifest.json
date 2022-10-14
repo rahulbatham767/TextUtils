@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/TextUtils/static/js/main.bb922db3.js",
+    "index.html": "/TextUtils/index.html",
+    "main.bb922db3.js.map": "/TextUtils/static/js/main.bb922db3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bb922db3.js"
+  ]
+}
