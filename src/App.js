@@ -32,7 +32,8 @@ const showAlert=(message,type)=>{
 
   const [alert, setAlert] = useState({});
 
-  const toogleMode=()=>{
+  const toogleMode=(cls)=>{
+console.log(cls);
     if (darkMode==='dark') {
       setdarkMode('light');
       document.body.style.backgroundColor ='#7676ff';

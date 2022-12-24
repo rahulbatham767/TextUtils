@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 export const Navbar = (prop) => {
+  const tooglemode=()=>{
+      
+  };
   return (
 
     
@@ -25,6 +28,11 @@ export const Navbar = (prop) => {
        
       
       </ul>
+    <div className="d-flex">
+      <div className="bg-primary rounded mx-2 " style={{height:"30px",width:"30px"}} onClick={()=>{prop.tooglemode}}>
+
+      </div>
+    </div>
       <div className="form-check form-switch">
   <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onClick={prop.tooglemode}/>
   <label className={`form-check-label  text-${prop.mode==='dark'?'light':'dark'}`} htmlFor="flexSwitchCheckChecked">Enabled {prop.mode} Mode</label>
