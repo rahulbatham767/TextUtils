@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.js": "/TextUtils/static/js/main.62ae5af1.js",
+    "main.css": "/TextUtils/static/css/main.06956299.css",
+    "main.js": "/TextUtils/static/js/main.7b9d76ed.js",
+    "static/media/todo.svg": "/TextUtils/static/media/todo.975e4dd468232711715c285a01eb3e78.svg",
     "index.html": "/TextUtils/index.html",
-    "main.62ae5af1.js.map": "/TextUtils/static/js/main.62ae5af1.js.map"
+    "main.06956299.css.map": "/TextUtils/static/css/main.06956299.css.map",
+    "main.7b9d76ed.js.map": "/TextUtils/static/js/main.7b9d76ed.js.map"
   },
   "entrypoints": [
-    "static/js/main.62ae5af1.js"
+    "static/css/main.06956299.css",
+    "static/js/main.7b9d76ed.js"
   ]
 }
